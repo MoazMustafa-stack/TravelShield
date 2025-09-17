@@ -1,6 +1,6 @@
 import { Link } from 'expo-router';
 import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { loginStyles } from './styles/loginStyles';
+import { loginStyles } from '../styles/loginStyles';
 
 export default function Login() {
   return (
@@ -42,7 +42,7 @@ export default function Login() {
 
         <View style={loginStyles.signupContainer}>
           <Text style={loginStyles.signupText}>Don't have an account? </Text>
-          <Link href="/signup" asChild>
+          <Link href="./signup" asChild>
             <TouchableOpacity>
               <Text style={loginStyles.signupLink}>Sign Up</Text>
             </TouchableOpacity>
@@ -52,4 +52,3 @@ export default function Login() {
     </SafeAreaView>
   );
 }
-

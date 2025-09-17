@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { loginStyles } from './styles/loginStyles';
+import { loginStyles } from '../styles/loginStyles';
 
 export default function Signup() {
   const router = useRouter();
@@ -50,7 +50,7 @@ export default function Signup() {
 
         <View style={loginStyles.signupContainer}>
           <Text style={loginStyles.signupText}>Already have an account? </Text>
-          <TouchableOpacity onPress={() => router.replace('/(auth)/login')}>
+          <TouchableOpacity onPress={() => router.replace('./login')}>
             <Text style={loginStyles.signupLink}>Sign In</Text>
           </TouchableOpacity>
         </View>
